@@ -417,5 +417,5 @@ GitHub: https://github.com/Shaheensha21
 - Real-time model monitoring
 - Automated model retraining
 
-  
+  "The system is designed for deployment but currently executed locally using Docker Compose."
 
