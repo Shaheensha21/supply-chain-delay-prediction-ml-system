@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🚚 Supply Chain Delivery Delay Prediction System
 
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Project-blue)
@@ -240,7 +239,11 @@ Users can enter order details and receive a predicted shipping delay along with 
 
 Interactive dashboard showing supply chain analytics and operational insights.
 
-![Dashboard](docs/dashboard.png)
+![Dashboard](docs/img1.png)
+
+![Dashboard](docs/img2.png)
+
+![Dashboard](docs/img3.png)
 
 ---
 
@@ -258,17 +261,6 @@ docker compose up --build
 Applications will run at:
 Predictor → http://localhost:8501
 Dashboard → http://localhost:8502
-
----
-
-### 📊 Supply Chain Analytics Dashboard
-
-Interactive dashboard showing supply chain analytics and operational insights.
-
-![Dashboard](docs/img1.png)
-![Dashboard](docs/img2.png)
-![Dashboard](docs/img3.png)
-
 ---
 
 # 🏗️ Production Architecture
@@ -427,8 +419,3 @@ GitHub: https://github.com/Shaheensha21
 
   
 
-
-=======
-# supply-chain-delay-prediction-ml-system
-End-to-End Machine Learning System for Predicting Supply Chain Delivery Delays using XGBoost, MLflow Experiment Tracking, SHAP Explainability, Streamlit Dashboards, and Docker Containerization.
->>>>>>> 932449fe4dfebc794713334478280ed3cefbd94c
