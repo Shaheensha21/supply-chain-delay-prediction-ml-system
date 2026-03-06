@@ -1,0 +1,20 @@
+# Base image
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /dashboard
+
+# Copy dashboard app and data
+COPY ../dashboards/streamlit_dashboard ./dashboards/streamlit_dashboard
+COPY ../data/processed ./data/processed
+
+# Install dependencies
+COPY ../requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install plotly
+
+# Expose port
+EXPOSE 8502
+
+# Run the Streamlit dashboard app
+CMD ["streamlit", "run", "dashboards/streamlit_dashboard/app.py", "--server.port=8502", "--server.address=0.0.0.0"]

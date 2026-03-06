@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+
+  predictor:
+    build:
+      context: .
+      dockerfile: deployment/Dockerfile_predictor
+    container_name: delay_predictor
+    ports:
+      - "8501:8501"
+
+  dashboard:
+    build:
+      context: .
+      dockerfile: deployment/Dockerfile_dashboard
+    container_name: delay_dashboard
+    ports:
+      - "8502:8502"

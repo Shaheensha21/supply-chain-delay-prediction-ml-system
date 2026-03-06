@@ -1,0 +1,19 @@
+# Base image
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /app
+
+# Copy app and models
+COPY ../app ./app
+COPY ../models ./models
+
+# Install dependencies
+COPY ../requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Expose port
+EXPOSE 8501
+
+# Run the Streamlit predictor app
+CMD ["streamlit", "run", "app/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
