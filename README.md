@@ -288,57 +288,57 @@ Deployment
 
 # 📂 Project Structure
 
-ShaikAbdulShahansha-supply-chain-capstone
+shaik_shahansha_supplychain_capstone
 │
-├── docker-compose.yml
-├── requirements.txt
 ├── README.md
+├── requirements.txt
+├── docker-compose.yml
+├── presentation.pdf
 │
 ├── api
-│ └── main.py
+│   └── main.py
 │
 ├── app
-│ └── app.py
+│   └── app.py
 │
 ├── architecture
-│ └── Architecutre.png.png
+│   └── architecture.png
 │
 ├── dashboards
-│ └── streamlit_dashboard
-│ ├── app.py
-│ └── requirements.txt
+│   └── streamlit_dashboard
+│       ├── app.py
+│       └── requirements.txt
 │
 ├── data
-│ ├── raw
-│ │ └── DataCoSupplyChainDataset.csv
-│ │
-│ └── processed
-│ └── cleaned_supply_chain.csv
+│   ├── raw
+│   │   └── DataCoSupplyChainDataset.csv
+│   │
+│   └── processed
+│       └── cleaned_supply_chain.csv
 │
 ├── deployment
-│ ├── Dockerfile_dashboard
-│ └── Dockerfile_predictor
+│   ├── Dockerfile_dashboard
+│   └── Dockerfile_predictor
 │
 ├── docs
-│ ├── business_risk_assessment.pdf
-│ ├── explainability_report.pdf
-│ ├── insight_summary.md
-│ ├── executive_presentation.pdf
-│ └── model_evaluation_report.pdf
+│   ├── business_risk_assessment.pdf
+│   ├── explainability_report.pdf
+│   ├── insight_summary.md
+│   └── model_evaluation_report.pdf
 │
 ├── models
-│ ├── final_supply_chain_model.pkl
-│ └── supply_chain_delay_model.pkl
+│   ├── final_supply_chain_model.pkl
+│   └── supply_chain_delay_model.pkl
 │
 ├── notebooks
-│ ├── 01_eda_analytics.ipynb
-│ ├── 02_predictive_modeling.ipynb
-│ └── 03_ml_modeling.ipynb
+│   ├── 01_eda_analytics.ipynb
+│   ├── 02_predictive_modeling.ipynb
+│   └── 03_ml_modeling.ipynb
 │
 └── src
-├── train_model.py
-├── explain_model.py
-└── mlruns
+    ├── train_model.py
+    ├── explain_model.py
+    └── mlruns
 
 ---
 
